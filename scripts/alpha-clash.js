@@ -12,11 +12,13 @@ function handleKeyBoardKeyUpEvent(event) {
     const currentAlphabetElement = document.getElementById('current-alphabet');
     const currentAlphabet = currentAlphabetElement.innerText;
     const expectedAlphabet = currentAlphabet.toLowerCase();
-    console.log(playerPressed, expectedAlphabet); 
+    console.log(playerPressed, expectedAlphabet);
 
     // checked match or not
     if (playerPressed === expectedAlphabet) {
         console.log('you win');
+
+        removeBackgroundColorById(expectedAlphabet);
         continueGame();
     }
 }
