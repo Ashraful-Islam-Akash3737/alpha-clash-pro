@@ -98,14 +98,15 @@
         </section>
 
         <!-- final result -->
-        <section id="score" class=" flex justify-center items-center min-h-screen hidden">
+        <section id="final-score" class=" flex justify-center items-center min-h-screen hidden">
             <div
-                class="text-white px-12 py-11 rounded-2xl text-center space-y-6 bg-gradient-to-r from-[#8f6cc8] to-[#5624aa]">
+                class="text-white px-12 font-poppins py-11 rounded-2xl text-center space-y-6 bg-gradient-to-r from-[#8f6cc8] to-[#5624aa]">
+                <h4 class="text-3xl">Game Over !</h4>
                 <h1 class="text-8xl">
                     <span class="font-extrabold">Score:</span>
-                    <span>14</span>
+                    <span id="last-score">14</span>
                 </h1>
-                <button class="btn">Play Again</button>
+                <button onclick="play()" class="btn">Play Again</button>
                 <p>Practice will make you pro</p>
             </div>
         </section>
